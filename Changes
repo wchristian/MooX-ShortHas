@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+1.172231  2017-08-11 15:20:49+02:00 Europe/Berlin
     - some docs polish
 
 1.172230  2017-08-11 14:09:32+02:00 Europe/Berlin
