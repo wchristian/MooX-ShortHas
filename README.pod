@@ -31,6 +31,12 @@ L<https://github.com/wchristian/MooX-ShortHas>
 
 Christian Walde <walde.christian@gmail.com>
 
+=head1 CONTRIBUTOR
+
+=for stopwords mst - Matt S. Trout (cpan:MSTROUT)
+
+mst - Matt S. Trout (cpan:MSTROUT) <mst@shadowcat.co.uk>
+
 =head1 COPYRIGHT AND LICENSE
 
 
