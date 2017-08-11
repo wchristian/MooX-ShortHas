@@ -35,8 +35,8 @@ And options can be added or overriden by appending them:
 
 =head1 DESCRIPTION
 
-Moo's has asks developers to repeat themselves a lot to set up attributes, and
-since its inceptions the most common configurations of attributes have
+L<Moo>'s C<has> asks developers to repeat themselves a lot to set up attributes,
+and since its inceptions the most common configurations of attributes have
 crystallized through long usage.
 
 This module provides sugar shortcuts that wrap around has under the appropriate
@@ -71,6 +71,20 @@ Corresponds to:
 
 The first extra argument is thus expected to be any of the values appropriate
 for the builder option.
+
+=head1 SEE ALSO
+
+=over
+
+=item *
+
+L<Mu> - automatically wraps this module into Moo
+
+=item *
+
+L<Mu::Role> - automatically wraps this module into Moo::Role
+
+=back
 
 =for :stopwords cpan testmatrix url annocpan anno bugtracker rt cpants kwalitee diff irc mailto metadata placeholders metacpan
 
