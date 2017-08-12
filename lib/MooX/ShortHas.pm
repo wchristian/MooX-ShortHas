@@ -97,7 +97,7 @@ sub _modified_has {
 
 sub import {
     my $caller = caller;
-    my $has    = $caller->can( "has" );
+    my $has    = $caller->can( "has" ) or die "Moo not loaded in caller: $caller";
     my %mods   = (
         lazy => [qw( is lazy builder )],
         map { $_ => [ is => $_ => required => 1 ] } qw( ro rwp rw )

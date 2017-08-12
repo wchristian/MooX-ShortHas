@@ -49,5 +49,13 @@ sub run {
     $self->hrw_dyn( 2 );
     is $self->hrw, 2, "hrw_dyn installation worked";
 
+    {
+
+        package Nothing;
+        use Test::More;
+        use Test::Fatal;
+        like exception { MooX::ShortHas->import }, qr/Moo not loaded in caller: Nothing/, "require Moo to be loaded";
+    }
+
     return;
 }
