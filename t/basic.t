@@ -23,7 +23,7 @@ exit;
 
 sub run {
     Thing->can( "rw" )->( "hrw_dyn" );
-    
+
     my $self = Thing->new( qw( hro 2 hrwp 3 hrw 3 hrw_dyn 3 ) );
 
     is $self->hro_opt, undef, "hro_opt works but did not cause blow-up on construction";
@@ -34,7 +34,7 @@ sub run {
     is $self->hro, 2, "hro as getter works";
 
     is $self->has_hlazy, "", "hlazy builder not yet called";
-    is $self->hlazy, 2, "hlazy returns correct value";
+    is $self->hlazy,     2,  "hlazy returns correct value";
 
     is $self->hrwp, 3, "hrwp initial state correct";
     like exception { $self->hrwp( 2 ) }, qr/Usage: Thing::hrwp\(self\)/, "hrwp is ro";
