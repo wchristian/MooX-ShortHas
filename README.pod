@@ -6,7 +6,7 @@ MooX::ShortHas - shortcuts for common Moo has attribute configurations
 
 =head1 VERSION
 
-version 1.172231
+version 1.172250
 
 =head1 SYNOPSIS
 
