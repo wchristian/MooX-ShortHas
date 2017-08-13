@@ -28,7 +28,7 @@ sub run {
 
     is $self->hro_opt, undef, "hro_opt works but did not cause blow-up on construction";
 
-    like exception { $self->hro( 2 ) }, qr/Usage: Thing::hro\(self\)/, "hro is ro";
+    like exception { $self->hro( 2 ) }, qr/(Usage: Thing::hro\(self\)|hro is a read-only accessor)/, "hro is ro";
     like exception { $self->_set_hro( 2 ) }, qr/Can't locate object method "_set_hro" via package "Thing"/,
       "hro has no setter";
     is $self->hro, 2, "hro as getter works";
@@ -37,7 +37,7 @@ sub run {
     is $self->hlazy,     2,  "hlazy returns correct value";
 
     is $self->hrwp, 3, "hrwp initial state correct";
-    like exception { $self->hrwp( 2 ) }, qr/Usage: Thing::hrwp\(self\)/, "hrwp is ro";
+    like exception { $self->hrwp( 2 ) }, qr/(Usage: Thing::hrwp\(self\)|hrwp is a read-only accessor)/, "hrwp is ro";
     $self->_set_hrwp( 2 );
     is $self->hrwp, 2, "hrwp setter worked";
 

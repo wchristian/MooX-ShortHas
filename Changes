@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+    - tests now accept various Moo error message styles
 
 1.172250  2017-08-13 15:41:36+02:00 Europe/Berlin
     - throw error when attempting use in a non-Mooish class
