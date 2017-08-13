@@ -2,6 +2,7 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
     - throw error when attempting use in a non-Mooish class
+    - prevent $caller from being parsed wrongly
 
 1.172231  2017-08-11 15:20:49+02:00 Europe/Berlin
     - some docs polish

@@ -103,7 +103,7 @@ sub import {
         map { $_ => [ is => $_ => required => 1 ] } qw( ro rwp rw )
     );
     for my $mod ( keys %mods ) {
-        _install_coderef "$caller::$mod" => sub {
+        _install_coderef $caller. "::$mod" => sub {
             _modified_has $has, $mods{$mod}, @_;
         };
     }
