@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+    - added a third recognized form of "this is ro" to tests
 
 1.172251  2017-08-13 15:51:39+02:00 Europe/Berlin
     - tests now accept various Moo error message styles
