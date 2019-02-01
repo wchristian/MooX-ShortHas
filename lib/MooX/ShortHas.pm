@@ -84,6 +84,10 @@ L<Mu> - automatically wraps this module into Moo
  
 L<Mu::Role> - automatically wraps this module into Moo::Role
 
+=item *
+
+L<Mus> - Mu but with slightly more typing and strict constructors
+
 =back
 
 =cut

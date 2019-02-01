@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+    - add Mus to the SEE ALSO section
 
 1.172300  2017-08-18 16:04:56+02:00 Europe/Berlin
     - added a third recognized form of "this is ro" to tests
