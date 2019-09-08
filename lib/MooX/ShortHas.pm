@@ -92,7 +92,7 @@ L<Mus> - Mu but with slightly more typing and strict constructors
 
 =cut
 
-use Moo::_Utils;
+use Moo::_Utils qw(_install_coderef);
 
 sub _modified_has {
     my ( $has, $mod, $name, @args ) = @_;
