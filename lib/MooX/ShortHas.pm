@@ -92,7 +92,7 @@ L<Mus> - Mu but with slightly more typing and strict constructors
 
 =cut
 
-use Moo::_Utils qw(_install_coderef);
+use Moo::_Utils qw(_install_tracked);
 
 sub _modified_has {
     my ( $has, $mod, $name, @args ) = @_;
@@ -107,7 +107,7 @@ sub import {
         map { $_ => [ is => $_ => required => 1 ] } qw( ro rwp rw )
     );
     for my $mod ( keys %mods ) {
-        _install_coderef $caller. "::$mod" => sub {
+        _install_tracked $caller => $mod => sub {
             _modified_has $has, $mods{$mod}, @_;
         };
     }
