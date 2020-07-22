@@ -92,6 +92,7 @@ L<Mus> - Mu but with slightly more typing and strict constructors
 
 =cut
 
+use Moo 2.003006 ();
 use Moo::_Utils qw(_install_tracked);
 
 sub _modified_has {
